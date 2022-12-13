@@ -162,7 +162,7 @@ body {
 
 .happ h2{
   color: #000;
-  font-size: 2.3vmin;
+  
 }
 
 .happ {
@@ -356,6 +356,7 @@ body {
 .articles-row h4{
   font-size: 17px;
   color: #006f46;
+  text-align: center;
 }
 
 .articles-row a:hover h4 {
@@ -1003,6 +1004,8 @@ nav img {
 
 }
 
+/* For Responsiveness of Homepage */
+
 
 @media all and (max-width:700px){
   
@@ -1076,12 +1079,26 @@ nav img {
     color: #fff;
     padding: 12px 30px;
     text-align: center;
-    font-size: 1.2vh;
     font-weight: bold;
     border-radius: 15px;
     text-decoration: none;
+    margin-left: 110px
     
   }
+
+  .btn {
+    background-color: #006f46;
+    color: #fff;
+    padding: 8px 20px;
+    text-align: center;
+    font-size: 1.1vh;
+    font-weight: bold;
+    border-radius: 15px;
+    text-decoration: none;
+    /* margin-left: 40px; */
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
 
   .about-content p{
     font-size: 13px;
@@ -1092,6 +1109,14 @@ nav img {
     
   }
 
+  .articles-row {
+    margin: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-gap: 2rem;
+}
+
 
 }
 
@@ -1100,7 +1125,7 @@ nav img {
   
 
   #email {
-    width: 300px;
+    width: 250px;
     height: 50px;
     border-radius: 5px;
   }
